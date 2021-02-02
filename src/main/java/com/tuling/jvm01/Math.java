@@ -2,7 +2,7 @@ package com.tuling.jvm01;
 
 public class Math {
     public static final int initData = 666;
-    public static User user = new User();
+
 
     public int compute() {
         //一个方法对应一块栈帧内存区域 8
@@ -14,6 +14,7 @@ public class Math {
     }
     public static void main(String[] args) {
         Math math = new Math();
+        User user = new User();
         math.compute();
     }
 }
